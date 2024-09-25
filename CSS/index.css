@@ -71,14 +71,28 @@
     }
 } 
 
-.hero-section{
+.hero-section h1{
+    font-size: 1.5em;
+}
+.hero-section h3{
+    font-size: 1.2em;
+}
+
+
+.hero-section-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     background: url(../ASSETS/img-slider.jpg) no-repeat center;
     background-size: cover;
     width: 100%;
     height: 100vh;
+    z-index: 1;
+
 }
-.hero-section::before{
-    background-color: rgba(0, 0, 0, 0.6);
+.hero-section-container::before{
+    background-color: rgba(0, 0, 0, 0.3);
     content: "";
     height: 100%;
     position: absolute;
@@ -87,18 +101,31 @@
     bottom: 0;
     left: 0;
 }
-.hero-section.container{   
-    height: 100vh;
+.hero-section-content{
     z-index: 1;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    color: rgb(20, 250, 97);
+    text-align: center;
 }
-.hero-section h1{
-    font-size: 1.5em;
-}
-.hero-section h3{
+#hero{
+    color: rgb(31, 209, 31);
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
     font-size: 1.2em;
+    padding: 0 10px;
+}
+.hero-section-container h1{
+    color: rgb(1, 245, 1);
+    font-size: 3em;
+    font-weight: 900;
+    letter-spacing: 2px;
+
+}
+.hero-section-container h3{
+    color: rgb(20, 250, 97);
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
