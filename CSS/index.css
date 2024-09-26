@@ -10,7 +10,7 @@
 .navbar-brand{
     font-weight: 500;
     color: #009970;
-    font-size: 25px;	
+    font-size: 20px;	
     transition: 0.3s color;
 }
 .login-button{
@@ -27,8 +27,8 @@
     background-color: #007f6e;
 }
 .nav-item{
-    margin-left: 20px;
-    padding-left: 20px;
+    margin-left: 5px;
+    padding-left: 5px;
 }
 .navbar-toggler{
     border: none;
@@ -78,20 +78,15 @@
     font-size: 1.2em;
 }
 
-
-.hero-section-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background: url(../ASSETS/img-slider.jpg) no-repeat center;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
+.hero-section{
+    position: relative;
     z-index: 1;
-
+    color: rgb(20, 250, 97);
+    text-align: center;
+    width: 100%;
+    height: 100%;
 }
-.hero-section-container::before{
+.hero-section::before{
     background-color: rgba(0, 0, 0, 0.3);
     content: "";
     height: 100%;
@@ -101,11 +96,15 @@
     bottom: 0;
     left: 0;
 }
-.hero-section-content{
+
+.hero-section .container{
+    height: 100vh;
+    position: relative;
     z-index: 1;
     color: rgb(20, 250, 97);
     text-align: center;
 }
+
 #hero{
     color: rgb(31, 209, 31);
     width: 100%;
@@ -116,7 +115,8 @@
     font-size: 1.2em;
     padding: 0 10px;
 }
-.hero-section-container h1{
+
+.hero-section .container h1{
     color: rgb(1, 245, 1);
     font-size: 3em;
     font-weight: 900;
@@ -129,3 +129,68 @@
     font-weight: 600;
     letter-spacing: 2px;
 }
+
+.carrusel-img{
+    height: 150vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow:10px rgba(0, 0, 0, 0.5);
+}
+
+#carouselExampleFade {
+    padding-left: 10px;
+    margin: 10px;
+}
+
+/*.col-md-4{
+    width: 75%;
+    height: 100%;
+    flex-direction: row;
+}*/
+
+.card-text {
+    color:  hsl(164, 94%, 21%);
+    font-size: 15px;
+    text-align: center;
+}
+
+.card {
+    width: 300px;
+   height: 300px;
+    margin: 25px; 
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    overflow: hidden;
+    display: flex;
+}
+
+.carousel-inner{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: row;
+}
+
+.col{
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+}
+
+.card-footer{
+    height: 20%;
+    width: 100%;
+    justify-content: center;
+}
+
+.btn{
+    width: 100%;
+    color: black;
+    background-color: #009970;
+}
+
