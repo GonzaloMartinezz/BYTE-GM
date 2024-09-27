@@ -1,164 +1,28 @@
-/*NAVBAR*/
+/*CARRUSEL HEADER NO TOCAR*/
 
-.navbar-brand :me-auto{
-    color: hsl(164, 94%, 21%);
+.carousel-control-next , .carousel-control-prev{
+    bottom: -200px !important;
+    width: 10% !important;
+    top: 50% !important;
+    left: 80%;
+    transform: translateX(20%);
 }
-
-.navbar{
-    background-color:   hwb(0 100% 0% / 0.703);
-    box-shadow: 0 2px 4px hsla(131, 97%, 11%, 0.58);
-    height: 80px;
-    margin: 20px;
-    border-radius: 16px;
-    padding: 0.5rem;
-    color: #062100;
-}
-
-.navbar-brand{
-    font-weight: 500;
-    color: hsl(164, 83%, 14%);
-    font-size: 20px;	
-    transition: 0.3s color;
-}
-
-.login-button{
-    background-color: #009970;
-    color: #062100;
-    padding: 8px 20px;
-    border-radius: 50px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.login-button:hover{
-    background-color: #009970;
-}
-
-.nav-item{
-    margin-left: 5px;
-    padding-left: 5px;
-}
-
-.navbar-toggler{
-    border: none;
-    font-size: 1.25rem;
-}
-
-.navbar-toggler:focus .btn-close:focus{
-    box-shadow: none;
-    outline: none;
-}
-
-.nav-link{
-    color: #666777;
-    font-weight: 500;
-    position: relative; 
-    transition: 0.3s color;
-}
-
-.nav-link:hover, .nav-link:active{
-    color: hwb(0 0% 100%);
-}
-
-@media (min-width: 992px) {
-.nav-link::before{
-    content: "";
-    position: absolute;
-    width: 0;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 2px;
-    background-color: #009970;
-    visibility: hidden;
-    transition: 0.3s ease-in-out;
-}
-    
-.nav-link:hover::before , .nav-link.active::before{
-    width: 100%;
-    visibility: visible;
-    }
-}
-
-/*ESTA DE MAS
-.hero-section h1{
-    font-size: 1.5em;
-}
-.hero-section h3{
-    font-size: 1.2em;
-}
-
-.hero-section{
-    position: relative;
-    z-index: 1;
-    color: rgb(20, 250, 97);
-    text-align: center;
-    width: 100%;
-    height: 100%;
-}
-.hero-section::before{
-    background-color: rgba(0, 0, 0, 0.3);
-    content: "";
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right:0;
-    bottom: 0;
-    left: 0;
-}
-
-.hero-section .container{
-    height: 100vh;
-    position: relative;
-    z-index: 1;
-    color: rgb(20, 250, 97);
-    text-align: center;
-}
-
-#hero{
-    color: rgb(31, 209, 31);
-    width: 100%;
-    height: 50px;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    font-size: 1.2em;
-    padding: 0 10px;
-}
-
-.hero-section .container h1{
-    color: rgb(1, 245, 1);
-    font-size: 3em;
-    font-weight: 900;
-    letter-spacing: 2px;
-
-}
-
-.hero-section-container h3{
-    color: rgb(20, 250, 97);
-    font-size: 2em;
-    font-weight: 600;
-    letter-spacing: 2px;
-}*/
-
-/*CARRUSEL HEADER*/
 
 .carrusel-img{
     height: 100vh;
-    width: 90%;
+    width: 50%;
     object-fit: cover;
-    object-position: 50% 50%;
-    border-radius: 10px;
+    object-position: 25% 25%;
+    border-radius: 50px;
     margin: 10px;
     box-shadow:10px rgba(0, 0, 0, 0.5);
 }
 
 .carousel-caption {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 200%;
-    color: rgb(0, 0, 0);
+    color: #000000;
     text-align: center;
 }
 
@@ -166,16 +30,16 @@
     font-size: 48px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: hsl(0, 0%, 100%);
+    color: rgb(78, 62, 62);
 }
 
 .carousel-caption p {
     font-size: 30px;
     font-weight: normal;
-    color: rgb(255, 255, 255);
+    color: rgb(78, 62, 62);
 }
 
-/*CARDS*/
+/*CARDS NO TOCAR */
 
 .col-md-4{
     width: 75%;
