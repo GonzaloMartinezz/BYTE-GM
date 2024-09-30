@@ -1,10 +1,91 @@
+/*NAVBAR 1 NO TOCAR*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    padding: 0px;
+}
+
+.navbar{
+    background-color:   hwb(0 100% 0% / 0.703);
+    box-shadow: 0 2px 4px hsla(131, 97%, 11%, 0.58);
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+    color: #062100;
+}
+
+.container-fluid{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 0%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    padding: 0%;
+}
+
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#buscar {
+    width: 250px; 
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid hsl(141, 77%, 10%);
+    font-size: 16px;
+    padding-left: 10px;
+}
+  
+#user-link {
+    width: 60px;
+    float: right;
+    margin-left: auto;
+}
+
+#user {
+    color: hsl(131, 80%, 10%);
+}
+
+#carrito {
+    color: hsl(131, 80%, 10%);
+}
+  
+#carrito-link {
+    width: 50px;
+    float: left;
+}
+
+/*NAVBAR 2*/
+
+/*MAIN*/
+
+.main{
+    width: 100%;
+    height: calc(100vh  - 200px);
+}
+
 /*CARRUSEL HEADER NO TOCAR*/
 
 .carousel-control-next , .carousel-control-prev{
-    bottom: -200px !important;
+    bottom: 200px !important;
     width: 10% !important;
-    top: 50% !important;
-    left: 80%;
+    top: 77% !important;
+    left: 85%;
     transform: translateX(20%);
 }
 
@@ -30,16 +111,20 @@
     font-size: 48px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: rgb(78, 62, 62);
+    color: hsl(131, 80%, 10%);
 }
 
 .carousel-caption p {
     font-size: 30px;
     font-weight: normal;
-    color: rgb(78, 62, 62);
+    color: hsl(131, 80%, 10%);
 }
 
 /*CARDS NO TOCAR */
+
+.carousel slide carousel-fade{
+    display: flex;
+}
 
 .col-md-4{
     width: 75%;
@@ -51,6 +136,7 @@
     color:  hsl(164, 94%, 21%);
     font-size: 15px;
     text-align: center;
+    font-weight: bold;
 }
 
 .card {
@@ -78,15 +164,22 @@
     flex-direction: row;
 }
 
-.card-footer{
-    height: 20%;
-    width: 100%;
-    justify-content: center;
-}
-
 .btn{
     width: 100%;
     color: black;
-    background-color: #009970;
+    background-color: hsl(163, 48%, 11%);
 }
 
+.card-footer .btn-primary {
+    background-color:hsl(131, 80%, 10%);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/*FOOTER REALIZAR*/
