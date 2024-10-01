@@ -110,11 +110,11 @@ nav{
     background-color:  hwb(133 1% 85%);
 }
 
-/*IMAGEN CON TEXTO*/
+/*IMAGEN ATL CON TEXTO*/
 
-.img-fluid{
+.img-ATL{
     width: 100%;
-    height: 100%;
+    max-height: 50%;
     object-fit: cover;
     margin-top: -16px;
 }
@@ -127,28 +127,30 @@ nav{
     border-radius: 16px;
 }
 
-.texto-sobre-imagen {
+.texto-img-1 {
     position: absolute;
-    top: 80%;
-    left: 65%;
+    top: 90%;
+    left: 25%;
+    width: 40%;
     transform: translate(-50%, -50%);
-    color: hsl(146, 85%, 5%);
     font-size: 24px;
     text-align: center left;
 }
 
-.texto-sobre-imagen h2 {
+.texto-img-1 h2 {
     font-size: 48px;
     font-weight: bold;
     margin-bottom: 10px;
+    color:  #001d05;
 }
 
-.texto-sobre-imagen p {
+.texto-img-1 p {
     font-size: 24px;
     font-weight: normal;
+    color:#001d05;
 }
 
-/*CARDS*/
+/* CARDS ATL */
 
 .col-md-4{
     width: 75%;
@@ -210,4 +212,44 @@ nav{
     font-weight: bold;
     text-decoration: none;
     transition: background-color 0.3s ease;
+}
+
+/*IMAGEN SMT CON TEXTO*/
+
+.img-SMT{
+    width: 100%;
+    max-height: 35%;
+    object-fit: cover;
+    margin-top: 5px;
+}
+
+.imagen-con-texto {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.texto-img-2{
+    position: absolute;
+    top: 860%;
+    left: 30%;
+    width: 45%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    text-align: center left;
+}
+
+.texto-img-2 h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #001d05;
+}
+
+.texto-img-2 p {
+    font-size: 24px;
+    font-weight: normal;
+    color:#001d05;
 }

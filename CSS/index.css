@@ -4,13 +4,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: transparent; 
 }
 
 body {
-    display: flex;
+    position: relative !important;
+    padding-bottom: 3em;
+    min-width: 100vh;
     flex-direction: column;
     min-height: 100vh;
+    margin: 0;
 }
 
 .navbar{
@@ -85,7 +87,7 @@ nav{
     margin: auto;
     background-color: rgba(15, 69, 33, 0.244);
     font-size: 20px;
-    margin-top: 5px;   
+    margin-top: 5px;  
 }
 
 .menu-horizontal{
@@ -101,7 +103,7 @@ nav{
 .menu-horizontal > li > a{
     display: block;
     padding: 15px 10px;
-    color: rgba(20, 102, 29, 0.787);
+    color:  rgb(12, 136, 27);
     text-decoration: none;
 }
 
@@ -109,31 +111,10 @@ nav{
     background-color: hwb(133 1% 85%);
 }
 
-.menu-vertical{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    display: none;
-    background-color:rgba(20, 102, 29, 0.787);
-    padding: 10px;
-    border: 2px solid hsla(0, 0%, 80%, 0.446);
-}
-
-.menu-horizontal li:hover .menu-vertical{
-    display: block;
-    color: #0000000b;
-}
-
 .menu-vertical li:hover{
     background-color:  hwb(133 1% 85%);
 }
 
-.menu-vertical li a{
-    display: block;
-    color:  rgba(20, 102, 29, 0.787);
-    padding: 1px 4px 5px 50px;
-    text-decoration: none;
-}
 
 /*MAIN*/
 
@@ -252,9 +233,8 @@ nav{
 /*FOOTER REALIZAR*/
 
 footer {
+    padding: 1em 0;
+    position: absolute;
     bottom: 0;
-    left: 0;
     width: 100%;
-    position: none;
-    margin-top: auto
-}
+  }
