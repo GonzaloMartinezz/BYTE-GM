@@ -4,19 +4,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: transparent; 
 }
+
 body {
-    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .navbar{
-    background-color:   hwb(0 100% 0% / 0.703);
+    background-color:   rgba(255, 255, 255, 0.242);
     box-shadow: 0 2px 4px hsla(131, 97%, 11%, 0.58);
     height: 80px;
     margin: 20px;
     border-radius: 16px;
     padding: 0.5rem;
     color: #062100;
+}
+
+.navbar-brand h4{
+    color: rgb(12, 136, 27);
 }
 
 .container-fluid{
@@ -72,6 +80,61 @@ form {
 
 /*NAVBAR 2*/
 
+nav{
+    max-width: 1500px;
+    margin: auto;
+    background-color: rgba(15, 69, 33, 0.244);
+    font-size: 20px;
+    margin-top: 5px;   
+}
+
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-horizontal > li{
+    position: relative;
+}
+
+.menu-horizontal > li > a{
+    display: block;
+    padding: 15px 10px;
+    color: rgba(20, 102, 29, 0.787);
+    text-decoration: none;
+}
+
+.menu-horizontal > li:hover{
+    background-color: hwb(133 1% 85%);
+}
+
+.menu-vertical{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color:rgba(20, 102, 29, 0.787);
+    padding: 10px;
+    border: 2px solid hsla(0, 0%, 80%, 0.446);
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+    color: #0000000b;
+}
+
+.menu-vertical li:hover{
+    background-color:  hwb(133 1% 85%);
+}
+
+.menu-vertical li a{
+    display: block;
+    color:  rgba(20, 102, 29, 0.787);
+    padding: 1px 4px 5px 50px;
+    text-decoration: none;
+}
+
 /*MAIN*/
 
 .main{
@@ -82,19 +145,19 @@ form {
 /*CARRUSEL HEADER NO TOCAR*/
 
 .carousel-control-next , .carousel-control-prev{
-    bottom: 200px !important;
+    bottom: 100% !important;
     width: 10% !important;
-    top: 77% !important;
-    left: 85%;
+    top: 96% !important;
+    left: 88%;
     transform: translateX(20%);
 }
 
 .carrusel-img{
-    height: 100vh;
-    width: 50%;
+    height: 110vh;
+    width: 100%;
     object-fit: cover;
-    object-position: 25% 25%;
-    border-radius: 50px;
+    object-position: 10% 10%;
+    border-radius: 40px;
     margin: 10px;
     box-shadow:10px rgba(0, 0, 0, 0.5);
 }
@@ -103,7 +166,7 @@ form {
     position: absolute;
     top: 45%;
     left: 200%;
-    color: #000000;
+    color: hsl(0, 100%, 17%);
     text-align: center;
 }
 
@@ -118,6 +181,10 @@ form {
     font-size: 30px;
     font-weight: normal;
     color: hsl(131, 80%, 10%);
+}
+
+.carrusel-img-slider{
+    margin-top: -25px;
 }
 
 /*CARDS NO TOCAR */
@@ -183,3 +250,11 @@ form {
 }
 
 /*FOOTER REALIZAR*/
+
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    position: none;
+    margin-top: auto
+}

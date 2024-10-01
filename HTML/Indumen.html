@@ -13,39 +13,111 @@
 </head>
 <body>
 <header>
-  <!-- navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top ">
+   <!--navbar 1-->
+  <nav class="navbar fixed-top bg-body-tertiary">
     <div class="container-fluid">
-      <a href="/HTML/index.html" class="navbar-brand">
-        <h4>MOVE/SPORT</h4>
-      </a>
-      <form class="d-flex justify-content-center" role="search">
-        <input id="buscar" class="form-control me-2" type="search" placeholder="Que esta buscando?" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">BUSCAR</button>
-      </form>
-      <div id="user-link">
-      <a href="/HTML/Login.html" class="me-auto pe-0">
-        <i class='bx bxs-user'id="user"></i>
-      </a>
-      </div>
-      <div id="carrito-link">
-      <a href="#" class="me-auto pe-0">
-        <i class='bx bxs-cart-add'id="carrito"></i>
-      </a>
-      </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+              <a href="/HTML/index.html" class="navbar-brand">
+                <h4>MOVE/SPORT</h4>
+              </a>
+              <form class="d-flex justify-content-center" role="search">
+                <input id="buscar" class="form-control me-2" type="search" placeholder="Que esta buscando?" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+              </form>
+              <div id="user-link">
+              <a href="/HTML/Login.html" class="me-auto pe-0">
+                <i class='bx bxs-user'id="user"></i>
+              </a>
+              </div>
+              <div id="carrito-link">
+              <a href="#" class="me-auto pe-0">
+                <i class='bx bxs-cart-add'id="carrito"></i>
+              </a>
+              </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
     </div>
-  </nav>
-  <div class="imagen-con-texto"></div>
-    <img src="/ASSETS/Indumentaria-.webp" class="img-fluid" alt="img-slider">
-    <div class="texto-sobre-imagen">
-        <h2>¡Bienvenidos a MoveSport!</h2>
-        <p>La mejor tienda para el mejor deporte</p>
-    </div>
+   </nav>
 </div>
 </header>
+<section>
+  <!--navbar 2-->
+<nav>
+<ul class="menu-horizontal">
+  <li>
+     <a href="/HTML/index.html">INICIO</a>
+  </li>
+  <li>
+    <a href="/HTML/Indumen.html">INDUMENTARIA</a>
+  </li>
+    <ul class="menu-vertical">
+      <li> 
+        <a href="#">Remeras</a>
+      </li>
+      <li>
+        <a href="#">Pantalones</a>
+      </li>
+      <li>
+        <a href="/HTML/Indumen.html">Todo</a>
+      </li>
+    </ul>
+  <li> 
+    <a href="#">CLUBES</a>
+  </li>
+    <ul class="menu-vertical">
+    <li>
+      <a href="#">Atletico de Tucuman</a>
+    </li>
+    <li>
+      <a href="#">San Martin de Tucuman</a>
+    </li>
+    <li>
+      <a href="#">Todos</a>
+    </li>
+    </ul>
+  <li>
+    <a href="#">BOTINES</a>
+  </li>
+    <ul class="menu-vertical">
+    <li>
+      <a href="#">Futbol 11</a>
+    </li>
+    <li>
+      <a href="#">Futbol 5</a>
+    </li>
+    <li>
+      <a href="#">Rugby</a>
+    </li>
+    <li>
+      <a href="#">Todo</a>
+    </li>
+    </ul>
+  <li>
+    <a href="#">CALZADO</a>
+  </li>
+    <ul class="menu-vertical">
+    <li>
+      <a href="#">Zapatillas</a>
+    </li>
+    <li>
+      <a href="#">Ojotas</a>
+    </li>
+    <li>
+      <a href="#">Todo</a>
+    </li>
+    </ul>
+  <li>
+    <a href="/HTML/Contacto.html">CONTACTO</a>
+  </li>
+</ul>
+</nav>
+</section>
+<div class="imagen-con-texto"></div>
+<img src="/ASSETS/Indumentaria-.webp" class="img-fluid" alt="img-slider">
+<div class="texto-sobre-imagen">
+    <h2>¡Bienvenidos a MoveSport!</h2>
+    <p>La mejor tienda para el mejor deporte</p>
+</div>
     <main>
     <hr>
     <!-- carousel -->
@@ -386,12 +458,13 @@
         </div>
       </div>
     </main>
-  </body>
   <footer>
     <div class="footer">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14240.833340204605!2d-65.2054104!3d-26.8333252!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c0fd19cf151%3A0xa9dd4b24bf9666c!2sUniversidad%20del%20Norte%20Santo%20Tom%C3%A1s%20de%20Aquino!5e0!3m2!1ses!2sar!4v1727747443037!5m2!1ses!2sar" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <p>© 2024. MoveSport. Todos los derechos reservados.</p>
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
   </script>
+</body>
 </html>

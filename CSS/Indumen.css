@@ -73,12 +73,68 @@ form {
 
 /*NAVBAR 2*/
 
+nav{
+    max-width: 1500px;
+    margin: auto;
+    background-color: rgba(15, 69, 33, 0.244);
+    font-size: 20px;
+    margin-top: 105px;   
+}
+
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-horizontal > li{
+    position: relative;
+}
+
+.menu-horizontal > li > a{
+    display: block;
+    padding: 15px 10px;
+    color: rgba(20, 102, 29, 0.787);
+    text-decoration: none;
+}
+
+.menu-horizontal > li:hover{
+    background-color: hwb(133 1% 85%);
+}
+
+.menu-vertical{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color:rgba(20, 102, 29, 0.787);
+    padding: 10px;
+    border: 2px solid hsla(0, 0%, 80%, 0.446);
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+    color: #0000000b;
+}
+
+.menu-vertical li:hover{
+    background-color:  hwb(133 1% 85%);
+}
+
+.menu-vertical li a{
+    display: block;
+    color:  rgba(20, 102, 29, 0.787);
+    padding: 1px 4px 5px 50px;
+    text-decoration: none;
+}
+
 /*IMAGEN CON TEXTO*/
 
 .img-fluid{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    margin-top: -16px;
 }
 
 .imagen-con-texto {
@@ -91,12 +147,12 @@ form {
 
 .texto-sobre-imagen {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 80%;
+    left: 65%;
     transform: translate(-50%, -50%);
     color: #033318;
     font-size: 24px;
-    text-align: center;
+    text-align: center left;
 }
 
 .texto-sobre-imagen h2 {
