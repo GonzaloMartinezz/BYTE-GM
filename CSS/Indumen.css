@@ -224,7 +224,7 @@ footer{
     font-family: sans-serif;
     position: relative;
     width: 100%;
-    background-color: #0a2e5b7e;   
+    background-color: hwb(122 4% 64% / 0.265);   
     min-height: 100px;
     padding: 20px 50px;
     display: flex;
@@ -233,17 +233,12 @@ footer{
     flex-direction: column;
 }
 
-.logo-footer{
-    height: 70px;
-    margin-left: 40px;
-}
-
 .social-icon{
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    margin: 10px 5px ;
+    margin: 5px;
     flex-wrap: wrap;
 }
 
@@ -252,10 +247,10 @@ footer{
 }
 
 .icon{
-    color: hsl(234, 100%, 8%);
+    color: hsl(163, 48%, 11%);
     font-size: 32px;
     display: inline-block;
-    margin: 3px 50px;
+    margin: 1px 50px;
     transition: 0.5s;
 }
 
@@ -268,8 +263,9 @@ footer{
     justify-content: center;
     position: relative;
     align-items: center;
-    margin: 5px -100px;
+    margin: 5px 50px;
     flex-wrap: wrap;
+    margin-left: 110px;
 }
 
 .menu-elem{
@@ -277,12 +273,12 @@ footer{
 }
 
 .menu-icon{
-    color:hwb(235 0% 91%);
+    color: hsl(163, 48%, 11%);
     font-size: 22px;
     display: inline-block;
     text-decoration: none;
     position: center;
-    margin: -10px 100px;
+    margin: 0px 80px;
     opacity: 0.5;
     transition: 0.3s;
 }
@@ -292,9 +288,10 @@ footer{
 }
 
 .copyrght{
-    color:rgba(0, 2, 23, 0.688);
+    color: hsl(163, 48%, 11%);
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 22px;
+    margin-left: 46px;
 }

@@ -253,3 +253,84 @@ nav{
     font-weight: normal;
     color:#001d05;
 }
+
+/*FOOTER NO TOCAR*/
+
+footer{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    position: relative;
+    width: 100%;
+    background-color: hwb(122 4% 64% / 0.265);   
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 5px;
+    flex-wrap: wrap;
+}
+
+.icon-element{
+    list-style: none;
+}
+
+.icon{
+    color: hsl(163, 48%, 11%);
+    font-size: 32px;
+    display: inline-block;
+    margin: 1px 50px;
+    transition: 0.5s;
+}
+
+.icon:hover{
+    transform: translateY(-10px);
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 5px 50px;
+    flex-wrap: wrap;
+    margin-left: 110px;
+}
+
+.menu-elem{
+    list-style: none
+}
+
+.menu-icon{
+    color: hsl(163, 48%, 11%);
+    font-size: 22px;
+    display: inline-block;
+    text-decoration: none;
+    position: center;
+    margin: 0px 80px;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.menu-icon:hover{
+    opacity: 2;
+}
+
+.copyrght{
+    color: hsl(163, 48%, 11%);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    margin-left: 46px;
+}
