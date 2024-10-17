@@ -235,13 +235,13 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .social-icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   /*  display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
     position: relative;
     margin: 5px;
     flex-wrap: wrap;
@@ -294,9 +294,11 @@ footer{
 
 .copyrght{
     color: hsl(163, 48%, 11%);
-    text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 22px;
-    margin-left: 46px;
+    margin-left: 30px;
+    text-align: center;
+    font-weight: bold;
+    
 }
